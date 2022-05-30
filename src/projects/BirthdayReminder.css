@@ -1,0 +1,132 @@
+/*
+==============
+Variables
+==============
+*/
+
+:root{
+    /* Shades of body color */
+    --clr-body: #3797A4;
+    --clr-body-2:#3babba;
+
+    /* primary button color */
+    --clr-btn: #52057B;
+
+    /* Color for items-box */
+    --clr-item: #D2F5E3;
+
+    /* useful color */
+    --clr-white: #ffff;
+    --clr-grey: #617d98;
+
+    /* other variables */
+    --letter-spacing: 0.1rem;
+}
+
+/*
+=============== 
+Global Styles
+===============
+*/
+
+body{
+    align-items: center;
+    background: var(--clr-body);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 0.875rem;
+}
+
+.container{
+    background: var(--clr-item);
+    border-radius: 4px;
+    box-shadow: 0px 5px 15px darkslategray;
+    margin: 3% auto;
+    padding: 2rem;
+    width: 30vw;
+}
+
+.dayHeading{
+    font-weight: 400;
+    text-align: center;
+}
+
+.dog{
+    align-items: center;
+    background: var(--clr-item);
+    border-radius: 4px;
+    display: flex;
+    flex: 0.5 1;
+    justify-content: space-between;
+    margin: 0.4rem 0;
+    padding: 0.4rem 0.6rem;
+}
+
+.dog:hover{
+    background: var(--clr-white);
+    transition: all 0.2s ease-in-out;
+}
+
+.dogImg{
+    border-radius: 100%;
+    height: 18%;
+    width: 18%;
+}
+
+.dogInfo{
+    padding: 0.1rem 0.2rem 0.1rem 0;
+    margin: auto 0.4rem;
+    width: 60%;
+}
+
+.dogName{
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: var(--letter-spacing);
+    margin: 0.2rem 0;
+    padding: 0;
+}
+
+.dogAge{
+    color: var(--clr-grey);
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 0.2rem 0;
+    padding: 0;
+}
+
+.btn{
+    background: var(--clr-body);
+    border: none;
+    color: var(--clr-white);
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+.removeBtn{
+    box-sizing: border-box;
+    border: 2px solid transparent;
+    border-radius: 12px;
+    padding: 0.4rem 0.4rem;
+    width: 3rem;
+    height: 3rem;
+}
+
+.removeBtn:hover {
+    background-color: var(--clr-white);
+    border: 2px solid black;
+    color: black;
+    transition: all 0.2s ease-in-out;
+}
+
+.removeAllBtn{
+    border-radius: 4px;
+    padding: 0.8rem;
+    margin-top: 1rem;
+    width: 100%;
+}
+
+.removeAllBtn:hover{
+    background-color: var(--clr-body-2);
+    color: black;
+    transition: all 0.2s ease-in-out;
+}
