@@ -7,7 +7,7 @@
 
 #### useEffect and Conditional Rendering
 
-2. Tours
+2. Tours - [DEMO](https://tours-react-ccsc.netlify.app/)
 3. Reviews
 4. Accordion
 5. Menu
