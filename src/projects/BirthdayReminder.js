@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 
 import { data } from "./data";
+import "./BirthdayReminder.css";
 
 const BirthdayReminder = () => {
   const [dogs, setDogs] = useState(data);

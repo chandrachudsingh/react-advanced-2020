@@ -12,12 +12,11 @@ const defaultState = {
 const Index = () => {
   const [name, setName] = useState("");
   const [state, dispatch] = useReducer(reducer, defaultState);
-
   const handleSubmit = (e) => {
     e.preventDefault();
     if (name) {
       const newItem = { id: new Date().getTime().toString(), name };
-      dispatch({ type: "ADD_ITEM", payload: newItem }); //dispatch fn with action object having properties - 'type' & more.
+      dispatch({ type: "ADD_ITEM", payload: newItem });
       setName("");
     } else {
       dispatch({ type: "NO_VALUE" });
@@ -31,7 +30,7 @@ const Index = () => {
       {state.isModalOpen && (
         <Modal closeModal={closeModal} modalContent={state.modalContent} />
       )}
-      <form action="" className="form" onSubmit={handleSubmit}>
+      <form action="" onSubmit={handleSubmit} className="form">
         <div>
           <input
             type="text"
@@ -43,7 +42,7 @@ const Index = () => {
       </form>
       {state.people.map((person) => {
         return (
-          <div key={person.id} className="item">
+          <div className="item" key={person.id}>
             <h4>{person.name}</h4>
             <button
               onClick={() =>
